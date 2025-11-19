@@ -1,9 +1,6 @@
 package io.github.rubenurena.challenges;
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
+import java.util.function.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,40 +47,43 @@ public class Main {
         // 3)-The last name is the first name spelled backwards.
         // Print using forEach.
 
-        String[] names = {"Ruben","Juan","Ana", "Bob","Jen"};// 1)-set the complete array to Uppercase.
-        Arrays.setAll(names, (u)-> names[u].toUpperCase());
+//        String[] names = {"Ruben","Juan","Ana", "Bob","Jen"};// 1)-set the complete array to Uppercase.
+//        Arrays.setAll(names, (u)-> names[u].toUpperCase());
+//
+//
+//        Arrays.setAll(names, (r)->{// 2)-Add a Random middle initial.
+//            Random random = new Random();
+//            char charRandom = (char)(random.nextInt(90-65+1)+65);
+//            return names[r]+" "+charRandom+".";
+//        });
+//
+//
+//        Arrays.setAll(names, ( l)->{// 3)-The last name is the first name spelled backwards.
+//            var split = names[l].split(" ")[0];
+//            var getName= split.split("");
+//            StringBuilder lastName = new StringBuilder();
+//            for (int ll = 1; ll <= split.length() ; ll++){
+//                lastName.append(getName[getName.length - ll]);
+//            }
+//            return names[l]+" "+lastName;
+//        }) ;
+//
+//
+//        ArrayList<String> list = new ArrayList<>(Arrays.asList(names));// 4)-Remove if the first name is equal to the last name.
+//        list.removeIf(  (s) ->{
+//            var split = s.split(" ");
+//            var getFirstName = split[0];
+//            var getLastName =  split[split.length-1];
+//            return getFirstName.equals(getLastName);
+//        });
+//
+//        list.forEach( (aa)-> System.out.println(aa));//Print using forEach.
+//
 
 
-        Arrays.setAll(names, (r)->{// 2)-Add a Random middle initial.
-            Random random = new Random();
-            char charRandom = (char)(random.nextInt(90-65+1)+65);
-            return names[r]+" "+charRandom+".";
-        });
 
 
-        Arrays.setAll(names, ( l)->{// 3)-The last name is the first name spelled backwards.
-            var split = names[l].split(" ")[0];
-            var getName= split.split("");
-            StringBuilder lastName = new StringBuilder();
-            for (int ll = 1; ll <= split.length() ; ll++){
-                lastName.append(getName[getName.length - ll]);
-            }
-            return names[l]+" "+lastName;
-        }) ;
-
-
-        ArrayList<String> list = new ArrayList<>(Arrays.asList(names));// 4)-Remove if the first name is equal to the last name.
-        list.removeIf(  (s) ->{
-            var split = s.split(" ");
-            var getFirstName = split[0];
-            var getLastName =  split[split.length-1];
-            return getFirstName.equals(getLastName);
-        });
-
-        list.forEach( (aa)-> System.out.println(aa));//Print using forEach.
-
-
-
+        
 
 
 
