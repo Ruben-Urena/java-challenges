@@ -9,7 +9,7 @@ import java.util.function.UnaryOperator;
 public class Main {
     public static void main(String[] args) {
         // Create a list of UnaryOperator<String> containing multiple lambda expressions.
-        // Each lambda should include at least one method reference.
+        // Lambda list should include at least one method reference.
         // Then create an array of names and apply all the operators inside the list to each element.
         // Implement this logic inside a separate method.
         String[] names = {"Juan","Ethan","Marcus","Maria","Anna","Hannah"};
